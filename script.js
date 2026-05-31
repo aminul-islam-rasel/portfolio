@@ -621,3 +621,30 @@ if (avatarMan) {
 
 console.log('%c🚀 Rasel Portfolio', 'font-size: 24px; font-weight: bold; color: #54C5F8;');
 console.log('%cBuilt with Flutter 💙 and Three.js 3D', 'font-size: 14px; color: #8BA4BE;');
+
+(function () {
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('portfolio-theme');
+  const defaultTheme = storedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+  function setTheme(theme) {
+    if (theme === 'light') {
+      document.body.classList.add('light-theme');
+      themeToggle?.querySelector('i')?.classList.replace('fa-moon', 'fa-sun');
+    } else {
+      document.body.classList.remove('light-theme');
+      themeToggle?.querySelector('i')?.classList.replace('fa-sun', 'fa-moon');
+    }
+    localStorage.setItem('portfolio-theme', theme);
+  }
+
+  if (themeToggle) {
+    setTheme(defaultTheme);
+    themeToggle.addEventListener('click', () => {
+      const nextTheme = document.body.classList.contains('light-theme') ? 'dark' : 'light';
+      setTheme(nextTheme);
+    });
+  } else if (defaultTheme === 'light') {
+    document.body.classList.add('light-theme');
+  }
+})();
