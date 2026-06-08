@@ -842,6 +842,52 @@ a, button, .project-card, .skill-category-card, .contact-card, .edu-card {
   margin-bottom: 2rem;
 }
 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 24px;
+  padding: 26px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--flutter-blue);
+  box-shadow: 0 24px 60px rgba(84, 197, 248, 0.16);
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(84, 197, 248, 0.12);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-card p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
 .highlight-card {
   display: flex;
   align-items: flex-start;
@@ -2918,6 +2964,32 @@ a, button, .project-card, .skill-category-card, .contact-card, .edu-card {
 .ai-suggestion-btn:hover {
   background: rgba(84, 197, 248, 0.2);
   transform: translateY(-2px);
+}
+
+.ai-qa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 18px;
+}
+
+.ai-qa-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(84, 197, 248, 0.14);
+  border-radius: 18px;
+  padding: 18px 16px;
+}
+
+.ai-qa-question {
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.ai-qa-answer {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.9rem;
 }
 
 .ai-typing {

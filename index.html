@@ -34,6 +34,8 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
@@ -190,6 +192,66 @@
             </a>
             <a href="#contact" class="btn btn-ghost">Let's Talk →</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">Current <span class="gradient-text">Role</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <span class="highlight-icon">💼</span>
+          <div>
+            <strong>Junior Software Engineer at Code Studio</strong>
+            <p>Currently working on Flutter mobile applications, Firebase integrations, and clean architecture implementations for scalable user experiences.</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">⚙️</span>
+          <div>
+            <strong>Responsibilities</strong>
+            <p>Designing reusable Flutter widgets, integrating APIs and Firebase services, and maintaining clean, testable code.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">Services I <span class="gradient-text">Provide</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-icon">📱</span>
+          <h3>Custom Flutter App Development</h3>
+          <p>Delivering scalable, production-ready mobile apps with clean architecture, responsive layouts, and smooth cross-platform performance.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🧠</span>
+          <h3>UX-Driven Interface Design</h3>
+          <p>Designing intuitive user journeys, polished interactions, and accessible screens that strengthen engagement and improve usability.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">☁️</span>
+          <h3>Firebase & Backend Integration</h3>
+          <p>Implementing secure authentication, real-time database sync, REST API connectivity, and cloud workflows for reliable app services.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🔧</span>
+          <h3>Performance Optimization</h3>
+          <p>Improving app speed, reducing load times, and maintaining robust code quality for smoother launch, runtime, and scaling.</p>
         </div>
       </div>
     </div>
@@ -789,18 +851,32 @@
         <div class="ai-messages" id="ai-messages">
           <div class="ai-message bot">
             <div class="ai-message-bubble">
-              👋 <strong>Welcome!</strong> I'm Rasel's AI assistant. I know everything about his tech stack, projects,
-              and experience at DIU. What would you like to know?
+              👋 <strong>Welcome!</strong> I’m Rasel’s AI assistant. I can share details on his technical skills,
+              development experience, current role, and portfolio highlights. How can I assist you today?
             </div>
             <div class="ai-suggestions">
-              <button class="ai-suggestion-btn" onclick="askAI('What is Rasel\'s tech stack?')">What is his tech
-                stack?</button>
-              <button class="ai-suggestion-btn" onclick="askAI('Tell me about his projects')">Tell me about his
-                projects</button>
-              <button class="ai-suggestion-btn" onclick="askAI('What is his experience at DIU?')">His experience at
-                DIU</button>
-              <button class="ai-suggestion-btn" onclick="askAI('Is Rasel available for work?')">Is he available for
-                work?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('What is Rasel\'s tech stack?')">What is Rasel's tech stack?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('Can you summarize his experience?')">Summarize his experience</button>
+              <button class="ai-suggestion-btn" onclick="askAI('What services does he provide?')">What services does he provide?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('Tell me about his current role at Code Studio')">Tell me about his current role</button>
+              <button class="ai-suggestion-btn" onclick="askAI('How can I contact him?')">How can I contact him?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('What are his strongest technologies?')">What are his strongest technologies?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('What type of apps does he build?')">What type of apps does he build?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('Does he work with Firebase?')">Does he work with Firebase?</button>
+            </div>
+            <div class="ai-qa-grid">
+              <div class="ai-qa-card">
+                <p class="ai-qa-question">Q: What kind of applications does Rasel build?</p>
+                <p class="ai-qa-answer">A: He creates cross-platform Flutter applications with polished UI, backend integration, and responsive performance.</p>
+              </div>
+              <div class="ai-qa-card">
+                <p class="ai-qa-question">Q: What services can he provide?</p>
+                <p class="ai-qa-answer">A: Mobile app development, UI/UX implementation, Firebase backend integration, and production optimization.</p>
+              </div>
+              <div class="ai-qa-card">
+                <p class="ai-qa-question">Q: Where is he working now?</p>
+                <p class="ai-qa-answer">A: He is currently a Junior Software Engineer at Code Studio, crafting Flutter apps and supporting scalable mobile solutions.</p>
+              </div>
             </div>
           </div>
         </div>

@@ -365,6 +365,21 @@ He completed his **B.Sc. in Software Engineering** at DIU, focusing on:
 
 DIU gave him the foundation to build real-world, scalable applications and develop a problem-solving mindset. It's where his Flutter journey truly began! 🚀`
   },
+  services: {
+    patterns: ['service', 'offer', 'provide', 'deliver', 'specialize'],
+    response: `🛠️ **Services Rasel Provides:**
+
+• **Custom Flutter App Development** — building production-ready cross-platform mobile applications with clean architecture.
+• **UI/UX Implementation** — designing polished user interfaces, intuitive navigation, and accessible interactions.
+• **Firebase & Backend Integration** — integrating authentication, real-time data sync, cloud functions and REST APIs.
+• **Performance Optimization** — tuning app speed, stability, and production readiness for smooth user experiences.`
+  },
+  role: {
+    patterns: ['current role', 'junior software', 'code studio', 'position', 'company', 'work at'],
+    response: `💼 **Current Role:**
+
+Rasel is currently working as a **Junior Software Engineer at Code Studio**. He focuses on Flutter mobile development, Firebase integration, reusable component design, and maintaining scalable project architecture.`
+  },
   work: {
     patterns: ['available', 'hire', 'job', 'work', 'freelance', 'opportunity', 'contact', 'reach'],
     response: `✅ **Yes, Rasel is available for work!**
