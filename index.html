@@ -11,13 +11,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css?v=3" />
 </head>
 
 <body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-name" id="preloader-name"></div>
+    <div class="preloader-bar"><i id="preloader-bar"></i></div>
+    <div class="preloader-count" id="preloader-count">00</div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
   <!-- Custom Cursor -->
   <div class="cursor-dot"></div>
   <div class="cursor-outline"></div>
@@ -69,13 +79,13 @@
           high-performance, user-centric applications.
         </p>
         <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">
+          <a href="#projects" class="btn btn-primary magnetic">
             <span>View My Projects</span>
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
-          <a href="aminul_islam_cv (3).pdf" download class="btn btn-secondary">
+          <a href="aminul_islam_cv.pdf" download class="btn btn-secondary magnetic">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
             </svg>
@@ -84,7 +94,7 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-number">9+</span>
+            <span class="stat-number">10+</span>
             <span class="stat-label">Projects Built</span>
           </div>
           <div class="stat-divider"></div>
@@ -123,6 +133,26 @@
         </div>
       </div>
     </div>
+    <div class="marquee" id="hero-marquee">
+      <div class="marquee-track">
+        <span class="marquee-item">Flutter</span>
+        <span class="marquee-item alt">Dart</span>
+        <span class="marquee-item">Firebase</span>
+        <span class="marquee-item alt">Clean Architecture</span>
+        <span class="marquee-item">BLoC</span>
+        <span class="marquee-item alt">REST APIs</span>
+        <span class="marquee-item">Mobile UX</span>
+        <span class="marquee-item alt">Performance</span>
+        <span class="marquee-item">Flutter</span>
+        <span class="marquee-item alt">Dart</span>
+        <span class="marquee-item">Firebase</span>
+        <span class="marquee-item alt">Clean Architecture</span>
+        <span class="marquee-item">BLoC</span>
+        <span class="marquee-item alt">REST APIs</span>
+        <span class="marquee-item">Mobile UX</span>
+        <span class="marquee-item alt">Performance</span>
+      </div>
+    </div>
     <div class="scroll-indicator">
       <div class="scroll-mouse">
         <div class="scroll-wheel"></div>
@@ -135,7 +165,7 @@
   <section id="about" class="section about-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Who I Am</span>
+        <span class="section-tag">Who I Am <span class="section-index">01</span></span>
         <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
         <div class="section-line"></div>
       </div>
@@ -201,7 +231,7 @@
   <section id="experience" class="section experience-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Experience</span>
+        <span class="section-tag">Experience <span class="section-index">02</span></span>
         <h2 class="section-title">Current <span class="gradient-text">Role</span></h2>
         <div class="section-line"></div>
       </div>
@@ -210,14 +240,16 @@
           <span class="highlight-icon">💼</span>
           <div>
             <strong>Junior Software Engineer at Code Studio</strong>
-            <p>Currently working on Flutter mobile applications, Firebase integrations, and clean architecture implementations for scalable user experiences.</p>
+            <p>Currently working on Flutter mobile applications, Firebase integrations, and clean architecture
+              implementations for scalable user experiences.</p>
           </div>
         </div>
         <div class="highlight-card">
           <span class="highlight-icon">⚙️</span>
           <div>
             <strong>Responsibilities</strong>
-            <p>Designing reusable Flutter widgets, integrating APIs and Firebase services, and maintaining clean, testable code.</p>
+            <p>Designing reusable Flutter widgets, integrating APIs and Firebase services, and maintaining clean,
+              testable code.</p>
           </div>
         </div>
       </div>
@@ -228,7 +260,7 @@
   <section id="services" class="section services-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">What I Offer</span>
+        <span class="section-tag">What I Offer <span class="section-index">03</span></span>
         <h2 class="section-title">Services I <span class="gradient-text">Provide</span></h2>
         <div class="section-line"></div>
       </div>
@@ -236,22 +268,26 @@
         <div class="service-card">
           <span class="service-icon">📱</span>
           <h3>Custom Flutter App Development</h3>
-          <p>Delivering scalable, production-ready mobile apps with clean architecture, responsive layouts, and smooth cross-platform performance.</p>
+          <p>Delivering scalable, production-ready mobile apps with clean architecture, responsive layouts, and smooth
+            cross-platform performance.</p>
         </div>
         <div class="service-card">
           <span class="service-icon">🧠</span>
           <h3>UX-Driven Interface Design</h3>
-          <p>Designing intuitive user journeys, polished interactions, and accessible screens that strengthen engagement and improve usability.</p>
+          <p>Designing intuitive user journeys, polished interactions, and accessible screens that strengthen engagement
+            and improve usability.</p>
         </div>
         <div class="service-card">
           <span class="service-icon">☁️</span>
           <h3>Firebase & Backend Integration</h3>
-          <p>Implementing secure authentication, real-time database sync, REST API connectivity, and cloud workflows for reliable app services.</p>
+          <p>Implementing secure authentication, real-time database sync, REST API connectivity, and cloud workflows for
+            reliable app services.</p>
         </div>
         <div class="service-card">
           <span class="service-icon">🔧</span>
           <h3>Performance Optimization</h3>
-          <p>Improving app speed, reducing load times, and maintaining robust code quality for smoother launch, runtime, and scaling.</p>
+          <p>Improving app speed, reducing load times, and maintaining robust code quality for smoother launch, runtime,
+            and scaling.</p>
         </div>
       </div>
     </div>
@@ -261,7 +297,7 @@
   <section id="skills" class="section skills-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Expertise</span>
+        <span class="section-tag">Expertise <span class="section-index">04</span></span>
         <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
         <div class="section-line"></div>
       </div>
@@ -380,13 +416,99 @@
   <section id="projects" class="section projects-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">My Work</span>
+        <span class="section-tag">My Work <span class="section-index">05</span></span>
         <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
         <div class="section-line"></div>
       </div>
       <div class="projects-grid">
 
-        <!-- E-commerce -->
+        <!-- Boichitro Paikari -->
+        <div class="project-card" data-tilt>
+          <div class="featured-badge">⭐ Featured</div>
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-emoji">🛒</div>
+              <div class="project-tech-chips">
+                <span>Flutter</span>
+                <span>REST API</span>
+                <span>Riverpod</span>
+              </div>
+            </div>
+            <h3 class="project-title">Boichitro Paikari</h3>
+            <div class="project-problem">
+              <span class="problem-label">Problem</span>
+              <p>A wholesale business needed a dependable digital platform to streamline product browsing, bulk
+                ordering, and business operations.</p>
+            </div>
+            <div class="project-solution">
+              <span class="solution-label">Solution</span>
+              <p>A wholesale e-commerce platform built to support organized catalog management, efficient ordering, and
+                scalable business growth.</p>
+            </div>
+            <div class="project-features">
+              <div class="feature-pill">✓ Bulk Ordering</div>
+              <div class="feature-pill">✓ Product Catalog</div>
+              <div class="feature-pill">✓ Business Dashboard</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/boicitro-paikari" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+                <span class="project-demo" aria-disabled="true">Coming Soon</span>
+              </div>
+              <a href="https://github.com/aminul-islam-rasel/boicitro-paikari" target="_blank" rel="noopener noreferrer" class="project-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOVA LAND -->
+        <div class="project-card" data-tilt>
+          <div class="featured-badge">⭐ Featured</div>
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-emoji">⚖️</div>
+              <div class="project-tech-chips">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>REST API</span>
+              </div>
+            </div>
+            <h3 class="project-title">NOVA LAND</h3>
+            <div class="project-problem">
+              <span class="problem-label">Problem</span>
+              <p>Clients needed a professional digital experience for legal and property-related services with quick
+                access to support and information.</p>
+            </div>
+            <div class="project-solution">
+              <span class="solution-label">Solution</span>
+              <p>A legal and property services application designed to present services clearly and support smooth
+                client engagement.</p>
+            </div>
+            <div class="project-features">
+              <div class="feature-pill">✓ Service Listings</div>
+              <div class="feature-pill">✓ Client Support</div>
+              <div class="feature-pill">✓ Professional UX</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/nova_land" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+                <span class="project-demo" aria-disabled="true">Coming Soon</span>
+              </div>
+              <a href="https://github.com/aminul-islam-rasel/nova_land" target="_blank" rel="noopener noreferrer" class="project-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-commerce Platform -->
         <div class="project-card" data-tilt>
           <div class="project-card-inner">
             <div class="project-header">
@@ -413,11 +535,102 @@
               <div class="feature-pill">✓ Secure Checkout</div>
             </div>
             <div class="project-footer">
-              <a href="https://github.com/aminul-islam-rasel/rasel_shop" class="project-link" target="_blank">View Project →</a>
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/rasel_shop" class="project-link" target="_blank" rel="noopener noreferrer">View
+                  Project →</a>
+                <span class="project-demo" aria-disabled="true">Coming Soon</span>
+              </div>
               <a href="https://github.com/aminul-islam-rasel/rasel_shop" target="_blank" class="project-github">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path
-                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1。524.１１７－３．１７６ ０ ０ １．００８－０．３２２ ３．３０１ １．２３Ａ１１．５０９ １１．５０９ ０ ０１１２ ５．８０３ｃ１．０２．００５ ２．０４７．１３８ ３．００６．４０４ ２．２９１－１．５５２ ３．２９７－１．２３ ３．２９７－１．２３．６５３ １．６５３．２４２ ２．８７４．１１８ ３．１７６．７７．８４ １．２３５ １．９１１ １．２３５ ３．２２１ ０ ４．６０９－２．８０７ ５．６２４－５．４７９ ５．９２１．４３．３７２．８２３ １．１０２．８２３ ２．２２２ｖ３．２９３ｃ０ .３₁₉ .₁₉₂ .₆₉₄ .₈₀₁ .₅₇₆Ｃ₂₀ .₅₆₆₂₁ .₇₉₇₂₄₁₇ .₃₂₄₁₂c₀ -6 .6₂₇ -5 .³⁷³ -₁₂ -₁₂z" />
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mathbaria Tech -->
+        <div class="project-card" data-tilt>
+          <div class="featured-badge">⭐ Featured</div>
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-emoji">🛍️</div>
+              <div class="project-tech-chips">
+                <span>Flutter</span>
+                <span>REST API</span>
+                <span>Riverpod</span>
+              </div>
+            </div>
+            <h3 class="project-title">Mathbaria Tech</h3>
+            <div class="project-problem">
+              <span class="problem-label">Problem</span>
+              <p>Mathbaria Tech needed a modern e-commerce platform to reach online customers and manage inventory.</p>
+            </div>
+            <div class="project-solution">
+              <span class="solution-label">Solution</span>
+              <p>A full-featured e-commerce app with product catalog, cart management, order tracking, and payment
+                integration.</p>
+            </div>
+            <div class="project-features">
+              <div class="feature-pill">✓ Product Catalog</div>
+              <div class="feature-pill">✓ Order Tracking</div>
+              <div class="feature-pill">✓ Payment Gateway</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/mathbaria_tech" class="project-link" target="_blank" rel="noopener noreferrer">View
+                  Project →</a>
+                <span class="project-demo" aria-disabled="true">Coming Soon</span>
+              </div>
+              <a href="https://github.com/aminul-islam-rasel/mathbaria_tech" class="project-github" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Office Buddy -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-emoji">💼</div>
+              <div class="project-tech-chips">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Riverpod</span>
+                <span>Analytics</span>
+              </div>
+            </div>
+            <h3 class="project-title">Office Buddy</h3>
+            <div class="project-problem">
+              <span class="problem-label">Problem</span>
+              <p>Offices needed a simple way to track employee activities and record work progress throughout the day.
+              </p>
+            </div>
+            <div class="project-solution">
+              <span class="solution-label">Solution</span>
+              <p>An office activity tracking app that logs work progress, breaks, and provides analytics for
+                productivity insights.</p>
+            </div>
+            <div class="project-features">
+              <div class="feature-pill">✓ Activity Tracking</div>
+              <div class="feature-pill">✓ Work Logs</div>
+              <div class="feature-pill">✓ Analytics Dashboard</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/officebuddy" class="project-link" target="_blank" rel="noopener noreferrer">View
+                  Project →</a>
+                <span class="project-demo" aria-disabled="true">Coming Soon</span>
+              </div>
+              <a href="https://github.com/aminul-islam-rasel/officebuddy" class="project-github" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
                 </svg>
               </a>
             </div>
@@ -426,7 +639,6 @@
 
         <!-- Mirzagonj Totho Seba -->
         <div class="project-card featured" data-tilt>
-          <div class="featured-badge">⭐ Featured</div>
           <div class="project-card-inner">
             <div class="project-header">
               <div class="project-emoji">📍</div>
@@ -453,12 +665,149 @@
               🌍 Community Impact: Serving thousands of local residents
             </div>
             <div class="project-footer">
-              <a href="https://github.com/aminul-islam-rasel/Mirzajong_online_sheba" class="project-link" target="_blank">View Project →</a>
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/Mirzajong_online_sheba" class="project-link"
+                  target="_blank" rel="noopener noreferrer">View Project →</a>
+                <span class="project-demo" aria-disabled="true">Coming Soon</span>
+              </div>
               <a href="https://github.com/aminul-islam-rasel/Mirzajong_online_sheba" target="_blank"
                 class="project-github">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path
-                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1。236-3。22１-.１２４-.３０３-.５３５-１。５２４．１１７－３．１７６ ０ ０ １．００８－０．３２２ ３．３０１ １．２３Ａ１１．５０９ １１．５０９ ０ ０１１２ ５．８０３ｃ１．０２．００５ ２．０４７．１３８ ３．００６．４０４ ２．２９１－１．５５２ ３．２９７－１．２３ ３．２９７－１．２３．６５３ １．６５３．２４２ ２．８７４．１１８ ３．１７６．７７．８４ １．２３５ １．９１１ １．２３５ ３．２２１ ０ ４．６０９－２．８０７ ５．６２４－５．４７９ ５．９２１．４３．３７２．８２３ １．１０₂．８₂₃ ₂₂₂ｖ₃․₂₉₃ｃ₀ .₃₁₉ .₁₉₂ .₆₉₄ .₈₀₁ .₅₇₆Ｃ₂₀ .₅₆₆₂₁ .₇₉₇₂₄₁₇ .₃₂₄₁₂c₀ -6 .6₂₇ -5 .³⁷³ -₁₂ -₁₂z" />
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ah Bangla Patente -->
+        <div class="project-card" data-tilt>
+          <div class="featured-badge">⭐ Featured</div>
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-emoji">📚</div>
+              <div class="project-tech-chips">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Riverpod</span>
+              </div>
+            </div>
+            <h3 class="project-title">Ah Bangla Patente</h3>
+            <div class="project-problem">
+              <span class="problem-label">Problem</span>
+              <p>Students preparing for Italian Patente exam needed an interactive learning app with practice tests.</p>
+            </div>
+            <div class="project-solution">
+              <span class="solution-label">Solution</span>
+              <p>A comprehensive exam preparation app with practice questions, real-time progress tracking, and study
+                materials.</p>
+            </div>
+            <div class="project-features">
+              <div class="feature-pill">✓ Practice Tests</div>
+              <div class="feature-pill">✓ Progress Tracking</div>
+              <div class="feature-pill">✓ Timed Quizzes</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/ah_bangla_patente_b" target="_blank" rel="noopener noreferrer"
+                  class="project-link">View Project →</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ahbanglapatente.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer"
+                  class="project-demo">Live Demo</a>
+              </div>
+              <a href="https://github.com/aminul-islam-rasel/ah_bangla_patente" target="_blank" class="project-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- I Track Ruet -->
+        <div class="project-card" data-tilt>
+          <div class="featured-badge">⭐ Featured</div>
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-emoji">🚗</div>
+              <div class="project-tech-chips">
+                <span>Flutter</span>
+                <span>Google Maps</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+            <h3 class="project-title">I Track Ruet</h3>
+            <div class="project-problem">
+              <span class="problem-label">Problem</span>
+              <p>RUET students needed a real-time vehicle tracking system to monitor campus transportation.</p>
+            </div>
+            <div class="project-solution">
+              <span class="solution-label">Solution</span>
+              <p>A real-time GPS-based vehicle tracking app with live location updates and arrival estimates for campus
+                vehicles.</p>
+            </div>
+            <div class="project-features">
+              <div class="feature-pill">✓ Live GPS Tracking</div>
+              <div class="feature-pill">✓ Real-time Updates</div>
+              <div class="feature-pill">✓ Arrival Estimate</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/i_track_ruet" target="_blank" rel="noopener noreferrer" class="project-link">View
+                  Project →</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ruetitracking.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="project-demo">Live
+                  Demo</a>
+              </div>
+              <a href="https://github.com/aminul-islam-rasel/i_track_ruet" target="_blank" class="project-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Income -->
+        <div class="project-card" data-tilt>
+          <div class="featured-badge">⭐ Featured</div>
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-emoji">🚶</div>
+              <div class="project-tech-chips">
+                <span>Flutter</span>
+                <span>Pedometer</span>
+                <span>Rewards</span>
+                <span>Riverpod</span>
+              </div>
+            </div>
+            <h3 class="project-title">Side Income</h3>
+            <div class="project-problem">
+              <span class="problem-label">Problem</span>
+              <p>Users wanted to earn rewards and incentives by maintaining an active walking lifestyle.</p>
+            </div>
+            <div class="project-solution">
+              <span class="solution-label">Solution</span>
+              <p>A health app that tracks walking activities and rewards users with coins redeemable for real benefits.
+              </p>
+            </div>
+            <div class="project-features">
+              <div class="feature-pill">✓ Step Tracking</div>
+              <div class="feature-pill">✓ Coin Rewards</div>
+              <div class="feature-pill">✓ Leaderboard</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/coin_walker" class="project-link" target="_blank" rel="noopener noreferrer">View
+                  Project →</a>
+                <a href="https://play.google.com/store/apps/details?id=com.sideincome.app" class="project-demo" target="_blank" rel="noopener noreferrer">Live
+                  Demo</a>
+              </div>
+              <a href="https://github.com/aminul-islam-rasel/coin_walker" class="project-github" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
                 </svg>
               </a>
             </div>
@@ -491,7 +840,11 @@
               <div class="feature-pill">✓ Minimalist UI</div>
             </div>
             <div class="project-footer">
-              <a href="https://github.com/aminul-islam-rasel/task_manager" class="project-link" target="_blank ">View Project →</a>
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/task_manager" class="project-link" target="_blank" rel="noopener noreferrer">View
+                  Project →</a>
+                <span class="project-demo" aria-disabled="true">Coming Soon</span>
+              </div>
               <a href="https://github.com/aminul-islam-rasel/task_manager" target="_blank" class="project-github">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path
@@ -502,7 +855,7 @@
           </div>
         </div>
 
-        <!-- Student Card System -->
+        <!-- Student Card -->
         <div class="project-card" data-tilt>
           <div class="project-card-inner">
             <div class="project-header">
@@ -528,47 +881,14 @@
               <div class="feature-pill">✓ Instant Scan</div>
             </div>
             <div class="project-footer">
-              <a href="https://github.com/aminul-islam-rasel/student_card" target="_blank" class="project-link">View Project →</a>
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/student_card" target="_blank" rel="noopener noreferrer" class="project-link">View
+                  Project →</a>
+                <span class="project-demo" aria-disabled="true">Coming Soon</span>
+              </div>
               <a href="https://github.com/aminul-islam-rasel/student_card" target="_blank" class="project-github">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path
-                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1。524．１１７－３．１７６ ０ ０ １．００８－０．３２２ ３．３０１ １．２３Ａ１１．５０９ １１．５０９ ０ ０１１２ ５．８０３ｃ１．０２．００５ ２．０４７．１３８ ３．００６．４０４ ２．２９１－１．５５２ ３．２９７－１．２３ ３．２９７－１．２３．６５３ １．６５３．２４２ ２．８７４．１１８ ３．１７６．７７．８４ １．２３５ １．９１１ １．２３５ ３．２２１ ０ ４．６₀９－２．８₀７ ５．６₂₄－５．₄₇₉ ５．₉₂₁．₄₃．₃₇₂．₈₂₃ ₁₁₀₂．₈₂₃ ₂₂₂ｖ₃․₂₉₃ｃ₀ .₃₁₉ .₁₉₂ .₆₉₄ .₈₀₁ .₅₇₆Ｃ₂₀ .₅₆₶₂₁ .₇₉₶₂₄₁₇ .₃₂₶₁₂c₀ -6 .6₂₇ -5 .³⁷³ -₁₂ -₁₂z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Ah Bangla Patente -->
-        <div class="project-card" data-tilt>
-          <div class="project-card-inner">
-            <div class="project-header">
-              <div class="project-emoji">📚</div>
-              <div class="project-tech-chips">
-                <span>Flutter</span>
-                <span>Firebase</span>
-                <span>Riverpod</span>
-              </div>
-            </div>
-            <h3 class="project-title">Ah Bangla Patente</h3>
-            <div class="project-problem">
-              <span class="problem-label">Problem</span>
-              <p>Students preparing for Italian Patente exam needed an interactive learning app with practice tests.</p>
-            </div>
-            <div class="project-solution">
-              <span class="solution-label">Solution</span>
-              <p>A comprehensive exam preparation app with practice questions, real-time progress tracking, and study materials.</p>
-            </div>
-            <div class="project-features">
-              <div class="feature-pill">✓ Practice Tests</div>
-              <div class="feature-pill">✓ Progress Tracking</div>
-              <div class="feature-pill">✓ Timed Quizzes</div>
-            </div>
-            <div class="project-footer">
-              <a href="https://github.com/aminul-islam-rasel/ah_bangla_patente" target="_blank" class="project-link">View Project →</a>
-              <a href="https://github.com/aminul-islam-rasel/ah_bangla_patente" target="_blank" class="project-github">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
                     d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
                 </svg>
               </a>
@@ -576,147 +896,37 @@
           </div>
         </div>
 
-        <!-- I Track Ruet -->
+        <!-- Note Pad -->
         <div class="project-card" data-tilt>
           <div class="project-card-inner">
             <div class="project-header">
-              <div class="project-emoji">🚗</div>
+              <div class="project-emoji">📝</div>
               <div class="project-tech-chips">
                 <span>Flutter</span>
-                <span>Google Maps</span>
-                <span>Firebase</span>
+                <span>Local Storage</span>
               </div>
             </div>
-            <h3 class="project-title">I Track Ruet</h3>
+            <h3 class="project-title">Note Pad</h3>
             <div class="project-problem">
               <span class="problem-label">Problem</span>
-              <p>RUET students needed a real-time vehicle tracking system to monitor campus transportation.</p>
+              <p>Users needed a simple and reliable way to capture notes quickly without relying on complex tools.</p>
             </div>
             <div class="project-solution">
               <span class="solution-label">Solution</span>
-              <p>A real-time GPS-based vehicle tracking app with live location updates and arrival estimates for campus vehicles.</p>
+              <p>A lightweight note-taking application focused on fast input, easy organization, and clean daily use.
+              </p>
             </div>
             <div class="project-features">
-              <div class="feature-pill">✓ Live GPS Tracking</div>
-              <div class="feature-pill">✓ Real-time Updates</div>
-              <div class="feature-pill">✓ Arrival Estimate</div>
+              <div class="feature-pill">✓ Quick Notes</div>
+              <div class="feature-pill">✓ Clean UI</div>
+              <div class="feature-pill">✓ Local Saving</div>
             </div>
             <div class="project-footer">
-              <a href="https://github.com/aminul-islam-rasel/i_track_ruet" target="_blank" class="project-link">View Project →</a>
-              <a href="https://github.com/aminul-islam-rasel/i_track_ruet" target="_blank" class="project-github">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Coin Walker -->
-        <div class="project-card" data-tilt>
-          <div class="project-card-inner">
-            <div class="project-header">
-              <div class="project-emoji">🚶</div>
-              <div class="project-tech-chips">
-                <span>Flutter</span>
-                <span>Pedometer</span>
-                <span>Rewards</span>
-                <span>Riverpod</span>
+              <div class="project-links">
+                <a href="https://github.com/aminul-islam-rasel/note_pad" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+                <span class="project-demo" aria-disabled="true">Coming Soon</span>
               </div>
-            </div>
-            <h3 class="project-title">Coin Walker</h3>
-            <div class="project-problem">
-              <span class="problem-label">Problem</span>
-              <p>Users wanted to earn rewards and incentives by maintaining an active walking lifestyle.</p>
-            </div>
-            <div class="project-solution">
-              <span class="solution-label">Solution</span>
-              <p>A health app that tracks walking activities and rewards users with coins redeemable for real benefits.</p>
-            </div>
-            <div class="project-features">
-              <div class="feature-pill">✓ Step Tracking</div>
-              <div class="feature-pill">✓ Coin Rewards</div>
-              <div class="feature-pill">✓ Leaderboard</div>
-            </div>
-            <div class="project-footer">
-              <a href="https://github.com/aminul-islam-rasel/coin_walker" class="project-link" target="_blank">View Project →</a>
-              <a href="https://github.com/aminul-islam-rasel/coin_walker" class="project-github" target="_blank">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mathbaria Tech -->
-        <div class="project-card" data-tilt>
-          <div class="project-card-inner">
-            <div class="project-header">
-              <div class="project-emoji">🛍️</div>
-              <div class="project-tech-chips">
-                <span>Flutter</span>
-                <span>REST API</span>
-                <span>Riverpod</span>
-              </div>
-            </div>
-            <h3 class="project-title">Mathbaria Tech</h3>
-            <div class="project-problem">
-              <span class="problem-label">Problem</span>
-              <p>Mathbaria Tech needed a modern e-commerce platform to reach online customers and manage inventory.</p>
-            </div>
-            <div class="project-solution">
-              <span class="solution-label">Solution</span>
-              <p>A full-featured e-commerce app with product catalog, cart management, order tracking, and payment integration.</p>
-            </div>
-            <div class="project-features">
-              <div class="feature-pill">✓ Product Catalog</div>
-              <div class="feature-pill">✓ Order Tracking</div>
-              <div class="feature-pill">✓ Payment Gateway</div>
-            </div>
-            <div class="project-footer">
-              <a href="https://github.com/aminul-islam-rasel/mathbaria_tech" class="project-link" target="_blank">View Project →</a>
-              <a href="https://github.com/aminul-islam-rasel/mathbaria_tech" class="project-github" target="_blank">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Office Buddy -->
-        <div class="project-card" data-tilt>
-          <div class="project-card-inner">
-            <div class="project-header">
-              <div class="project-emoji">💼</div>
-              <div class="project-tech-chips">
-                <span>Flutter</span>
-                <span>Firebase</span>
-                <span>Riverpod</span>
-                <span>Analytics</span>
-              </div>
-            </div>
-            <h3 class="project-title">Office Buddy</h3>
-            <div class="project-problem">
-              <span class="problem-label">Problem</span>
-              <p>Offices needed a simple way to track employee activities and record work progress throughout the day.</p>
-            </div>
-            <div class="project-solution">
-              <span class="solution-label">Solution</span>
-              <p>An office activity tracking app that logs work progress, breaks, and provides analytics for productivity insights.</p>
-            </div>
-            <div class="project-features">
-              <div class="feature-pill">✓ Activity Tracking</div>
-              <div class="feature-pill">✓ Work Logs</div>
-              <div class="feature-pill">✓ Analytics Dashboard</div>
-            </div>
-            <div class="project-footer">
-              <a href="https://github.com/aminul-islam-rasel/office_buddy" class="project-link" target="_blank">View Project →</a>
-              <a href="https://github.com/aminul-islam-rasel/office_buddy" class="project-github" target="_blank">
+              <a href="https://github.com/aminul-islam-rasel/note_pad" target="_blank" rel="noopener noreferrer" class="project-github">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
@@ -734,7 +944,7 @@
   <section id="education" class="section education-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">My Journey</span>
+        <span class="section-tag">My Journey <span class="section-index">06</span></span>
         <h2 class="section-title">Academic <span class="gradient-text">Timeline</span></h2>
         <div class="section-line"></div>
         <p class="education-subtitle">The path that shaped my engineering mindset.</p>
@@ -831,7 +1041,7 @@
   <section id="ai-assistant" class="section ai-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Interactive</span>
+        <span class="section-tag">Interactive <span class="section-index">07</span></span>
         <h2 class="section-title">Ask <span class="gradient-text">Rasel AI</span></h2>
         <div class="section-line"></div>
         <p class="ai-section-subtitle">Don't want to scroll? Ask my AI Assistant!</p>
@@ -855,27 +1065,38 @@
               development experience, current role, and portfolio highlights. How can I assist you today?
             </div>
             <div class="ai-suggestions">
-              <button class="ai-suggestion-btn" onclick="askAI('What is Rasel\'s tech stack?')">What is Rasel's tech stack?</button>
-              <button class="ai-suggestion-btn" onclick="askAI('Can you summarize his experience?')">Summarize his experience</button>
-              <button class="ai-suggestion-btn" onclick="askAI('What services does he provide?')">What services does he provide?</button>
-              <button class="ai-suggestion-btn" onclick="askAI('Tell me about his current role at Code Studio')">Tell me about his current role</button>
-              <button class="ai-suggestion-btn" onclick="askAI('How can I contact him?')">How can I contact him?</button>
-              <button class="ai-suggestion-btn" onclick="askAI('What are his strongest technologies?')">What are his strongest technologies?</button>
-              <button class="ai-suggestion-btn" onclick="askAI('What type of apps does he build?')">What type of apps does he build?</button>
-              <button class="ai-suggestion-btn" onclick="askAI('Does he work with Firebase?')">Does he work with Firebase?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('What is Rasel\'s tech stack?')">What is Rasel's tech
+                stack?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('Can you summarize his experience?')">Summarize his
+                experience</button>
+              <button class="ai-suggestion-btn" onclick="askAI('What services does he provide?')">What services does he
+                provide?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('Tell me about his current role at Code Studio')">Tell me
+                about his current role</button>
+              <button class="ai-suggestion-btn" onclick="askAI('How can I contact him?')">How can I contact
+                him?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('What are his strongest technologies?')">What are his
+                strongest technologies?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('What type of apps does he build?')">What type of apps
+                does he build?</button>
+              <button class="ai-suggestion-btn" onclick="askAI('Does he work with Firebase?')">Does he work with
+                Firebase?</button>
             </div>
             <div class="ai-qa-grid">
               <div class="ai-qa-card">
                 <p class="ai-qa-question">Q: What kind of applications does Rasel build?</p>
-                <p class="ai-qa-answer">A: He creates cross-platform Flutter applications with polished UI, backend integration, and responsive performance.</p>
+                <p class="ai-qa-answer">A: He creates cross-platform Flutter applications with polished UI, backend
+                  integration, and responsive performance.</p>
               </div>
               <div class="ai-qa-card">
                 <p class="ai-qa-question">Q: What services can he provide?</p>
-                <p class="ai-qa-answer">A: Mobile app development, UI/UX implementation, Firebase backend integration, and production optimization.</p>
+                <p class="ai-qa-answer">A: Mobile app development, UI/UX implementation, Firebase backend integration,
+                  and production optimization.</p>
               </div>
               <div class="ai-qa-card">
                 <p class="ai-qa-question">Q: Where is he working now?</p>
-                <p class="ai-qa-answer">A: He is currently a Junior Software Engineer at Code Studio, crafting Flutter apps and supporting scalable mobile solutions.</p>
+                <p class="ai-qa-answer">A: He is currently a Junior Software Engineer at Code Studio, crafting Flutter
+                  apps and supporting scalable mobile solutions.</p>
               </div>
             </div>
           </div>
@@ -897,7 +1118,7 @@
   <section id="contact" class="section contact-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Get In Touch</span>
+        <span class="section-tag">Get In Touch <span class="section-index">08</span></span>
         <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
         <div class="section-line"></div>
         <p class="contact-subtitle">Open for opportunities, collaborations, and conversations.</p>
